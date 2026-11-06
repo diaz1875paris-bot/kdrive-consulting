@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KDrive Consulting | L'expertise automobile sans compromis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        darkgold: '#B8860B',
+                        blackbg: '#0A0A0A',
+                        card: '#141414',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0A0A0A; color: #fff; }
+        .btn-gold { background: linear-gradient(135deg, #D4AF37, #B8860B); transition: all 0.3s; }
+        .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4); }
+        .card-hover { transition: all 0.4s ease; }
+        .card-hover:hover { transform: translateY(-8px); border-color: #D4AF37; }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-black/90 backdrop-blur-md border-b border-gold/20">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="text-2xl font-bold tracking-wide">KDrive <span class="text-gold">Consulting</span></div>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#accueil" class="hover:text-gold transition">Accueil</a>
+                <a href="#services" class="hover:text-gold transition">Services</a>
+                <a href="#resultats" class="hover:text-gold transition">Résultats</a>
+                <a href="#leasing" class="hover:text-gold transition">LLD / LOA</a>
+                <a href="#contact" class="hover:text-gold transition">Contact</a>
+            </nav>
+            <a href="#contact" class="btn-gold text-black font-semibold px-6 py-2.5 rounded-full text-sm flex items-center gap-2">
+                <i class="far fa-calendar-check"></i> Audit gratuit
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="accueil" class="relative min-h-screen flex items-center pt-24 overflow-hidden">
+        <div class="absolute inset-0 z-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6">
+            <div class="max-w-3xl">
+                <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+                    Trouvez votre <span class="text-gold">véhicule idéal</span><br>
+                    sans risque ni<br>
+                    <span class="text-gold">mauvaise surprise</span>
+                </h1>
+                <p class="text-lg text-gray-300 mb-8 max-w-lg">
+                    Nous gérons l'achat, l'import et les vérifications pour vous, en toute transparence. Des véhicules premium sélectionnés, contrôlés et livrés partout en France et en Europe.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="btn-gold text-black font-bold px-8 py-4 rounded-full text-lg flex items-center gap-2">
+                        <i class="far fa-calendar-check"></i> Réserver un audit gratuit
+                    </a>
+                    <a href="#services" class="border border-gold text-gold font-semibold px-8 py-4 rounded-full hover:bg-gold/10 transition">
+                        Découvrir nos services
+                    </a>
+                </div>
+                <div class="mt-10 flex items-center gap-6 text-sm">
+                    <div class="flex items-center gap-2"><i class="fas fa-users text-gold"></i> <span><strong>+150</strong> Clients satisfaits</span></div>
+                    <div class="flex items-center gap-2"><i class="fas fa-shield-alt text-gold"></i> <span><strong>100%</strong> Véhicules conformes</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Résultats concrets -->
+    <section id="resultats" class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4">Des résultats <span class="text-gold">concrets</span></h2>
+            <p class="text-center text-gray-400 mb-12">Nos clients économisent jusqu'à 30% vs le marché français</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-hover bg-card border border-white/10 rounded-2xl p-6">
+                    <h3 class="text-xl font-bold mb-3">BMW Série 3 - Allemagne</h3>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> -3 200€ vs marché FR</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> Livraison en 12 jours</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> Véhicule impeccable</li>
+                    </ul>
+                </div>
+                <div class="card-hover bg-card border border-white/10 rounded-2xl p-6">
+                    <h3 class="text-xl font-bold mb-3">Audi A5 - Belgique</h3>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> Historique complet</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> Inspection validée</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> Client satisfait</li>
+                    </ul>
+                </div>
+                <div class="card-hover bg-card border border-white/10 rounded-2xl p-6">
+                    <h3 class="text-xl font-bold mb-3">Golf 8 - Pologne</h3>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> 1ère main</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> Kilométrage certifié</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500"></i> Économie réalisée</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Expertises -->
+    <section id="services" class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4">Nos <span class="text-gold">expertises</span></h2>
+            <p class="text-center text-gray-400 mb-12">Un accompagnement complet, de la recherche à la livraison</p>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="card-hover bg-card border border-white/10 rounded-2xl p-6 text-center">
+                    <div class="w-14 h-14 mx-auto bg-gold/10 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-car text-gold text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Achat en France</h3>
+                    <p class="text-sm text-gray-400">Recherche, vérifications, négociation complète. Large choix de véhicules toutes marques.</p>
+                </div>
+                <div class="card-hover bg-card border border-white/10 rounded-2xl p-6 text-center">
+                    <div class="w-14 h-14 mx-auto bg-gold/10 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-globe-europe text-gold text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Import Europe</h3>
+                    <p class="text-sm text-gray-400">Allemagne, Belgique, Pologne et plus encore. Sourcing, contrôle, transport sécurisé.</p>
+                </div>
+                <div class="card-hover bg-card border border-white/10 rounded-2xl p-6 text-center">
+                    <div class="w-14 h-14 mx-auto bg-gold/10 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-search text-gold text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Expertise technique</h3>
+                    <p class="text-sm text-gray-400">Pré-inspection, diagnostics, contrôle technique, évaluation. Inspection mécanique complète.</p>
+                </div>
+                <div class="card-hover bg-card border border-white/10 rounded-2xl p-6 text-center">
+                    <div class="w-14 h-14 mx-auto bg-gold/10 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-handshake text-gold text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Conseil & Financement</h3>
+                    <p class="text-sm text-gray-400">LOA / LLD, particuliers & entreprises. Accompagnement sur-mesure et garantie.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leasing Section -->
+    <section id="leasing" class="py-20 bg-gradient-to-b from-black to-card">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Votre véhicule en <span class="text-gold">LLD ou LOA</span></h2>
+                <p class="text-xl text-gray-300">Faites le choix d’un véhicule premium et sportif au meilleur prix !</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="text-center p-4 bg-black/50 rounded-xl border border-gold/20">
+                        <i class="fas fa-car text-gold text-3xl mb-2"></i>
+                        <div class="font-bold">Véhicules disponibles</div>
+                        <div class="text-xs text-gray-400">Sélection de modèles récents et contrôlés</div>
+                    </div>
+                    <div class="text-center p-4 bg-black/50 rounded-xl border border-gold/20">
+                        <i class="fas fa-cogs text-gold text-3xl mb-2"></i>
+                        <div class="font-bold">Entretien inclus</div>
+                        <div class="text-xs text-gray-400">Suivi mécanique et sportif rigoureux</div>
+                    </div>
+                    <div class="text-center p-4 bg-black/50 rounded-xl border border-gold/20">
+                        <i class="fas fa-handshake text-gold text-3xl mb-2"></i>
+                        <div class="font-bold">Formules sur-mesure</div>
+                        <div class="text-xs text-gray-400">Options adaptées particuliers et pros</div>
+                    </div>
+                    <div class="text-center p-4 bg-black/50 rounded-xl border border-gold/20">
+                        <i class="fas fa-truck text-gold text-3xl mb-2"></i>
+                        <div class="font-bold">Livraison rapide</div>
+                        <div class="text-xs text-gray-400">Service national et européen</div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-center">Notre sélection Premium & Sportive</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center p-4 bg-card rounded-xl border border-white/10">
+                            <span>Golf 8 GTI</span><span class="text-gold font-bold">650 € / mois</span>
+                        </div>
+                        <div class="flex justify-between items-center p-4 bg-card rounded-xl border border-white/10">
+                            <span>Audi S3</span><span class="text-gold font-bold">900 € / mois</span>
+                        </div>
+                        <div class="flex justify-between items-center p-4 bg-card rounded-xl border border-white/10">
+                            <span>Audi RS3</span><span class="text-gold font-bold">900 € / mois</span>
+                        </div>
+                        <div class="flex justify-between items-center p-4 bg-card rounded-xl border border-white/10">
+                            <span>Mercedes A45 AMG</span><span class="text-gold font-bold">900 € / mois</span>
+                        </div>
+                        <div class="flex justify-between items-center p-4 bg-card rounded-xl border border-white/10">
+                            <span>BMW M4 Compétition</span><span class="text-gold font-bold">2 200 € / mois</span>
+                        </div>
+                        <div class="flex justify-between items-center p-4 bg-card rounded-xl border border-white/10">
+                            <span>Porsche 911</span><span class="text-gold font-bold">2 000 € / mois</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-400 mt-4 text-center">Cautions selon modèle. Contactez-nous pour un devis personnalisé.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi choisir -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8">Pourquoi choisir <span class="text-gold">KDrive</span> ?</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+                <div class="bg-card p-6 rounded-2xl border border-white/10">
+                    <i class="fas fa-clock text-gold text-3xl mb-4"></i>
+                    <h3 class="font-bold mb-2">Gain de temps</h3>
+                    <p class="text-sm text-gray-400">On s'occupe de tout</p>
+                </div>
+                <div class="bg-card p-6 rounded-2xl border border-white/10">
+                    <i class="fas fa-shield-alt text-gold text-3xl mb-4"></i>
+                    <h3 class="font-bold mb-2">Sécurité maximale</h3>
+                    <p class="text-sm text-gray-400">Aucun véhicule douteux</p>
+                </div>
+                <div class="bg-card p-6 rounded-2xl border border-white/10">
+                    <i class="fas fa-euro-sign text-gold text-3xl mb-4"></i>
+                    <h3 class="font-bold mb-2">Économie</h3>
+                    <p class="text-sm text-gray-400">Jusqu’à -30% vs marché français</p>
+                </div>
+                <div class="bg-card p-6 rounded-2xl border border-white/10">
+                    <i class="fas fa-network-wired text-gold text-3xl mb-4"></i>
+                    <h3 class="font-bold mb-2">Réseau européen</h3>
+                    <p class="text-sm text-gray-400">De partenaires de confiance</p>
+                </div>
+            </div>
+            <div class="mt-12 flex justify-center gap-12 text-center">
+                <div><div class="text-4xl font-bold text-gold">150+</div><div class="text-sm text-gray-400">Clients accompagnés</div></div>
+                <div><div class="text-4xl font-bold text-gold">100%</div><div class="text-sm text-gray-400">Véhicules conformes</div></div>
+                <div><div class="text-4xl font-bold text-gold">Europe</div><div class="text-sm text-gray-400">Réseau professionnel</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 bg-card">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-4">Parlez-nous de votre projet</h2>
+            <p class="text-gray-300 mb-8">Recevoir une réponse rapide</p>
+            <a href="https://www.snapchat.com/add/kdrive_consulting" target="_blank" class="inline-flex items-center gap-3 bg-yellow-400 text-black font-bold px-8 py-4 rounded-full text-lg hover:bg-yellow-300 transition">
+                <i class="fab fa-snapchat"></i> Ajoute-moi sur Snapchat @kdrive_consulting
+            </a>
+            <p class="mt-6 text-gray-400">Ta prochaine voiture est peut-être sur mon Snap !</p>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-sm text-gray-500 border-t border-white/10">
+        © KDrive Consulting - L'expertise automobile sans compromis
+    </footer>
+</body>
+</html>
